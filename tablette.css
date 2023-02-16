@@ -1,0 +1,127 @@
+@media only screen and (min-device-width : 820px) and (max-device-width : 1180px) and (orientation : portrait) {
+
+   
+        
+
+    #container {
+        width: 832px;
+        height: 602px;
+    }
+    
+    /* creation du fond du header */
+    header {
+        width: 832px;
+        height: 63px;
+    }
+
+    #logo {
+        height: 45px;
+        margin-left: 60px;
+        background-position-y: 17px;
+    }
+    
+    #titre {
+        margin-top: 22px;
+    }
+    /* mise en forme de la section avec une grille */
+    section {
+        display: grid;
+        grid-template-columns: 187px 206px 219px 105px;
+        grid-template-rows: 141px 87px 98px 98px 45px;
+        margin-left: 60px;
+    }
+
+    #ecran::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 0;
+        width: 832px;
+        top: 185px;
+        left: -60px;
+        border-bottom: 1px solid #252525;
+        overflow-wrap: break-word;
+    }
+
+    #majuscule {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #majuscule::after {
+        border: none;
+    }
+
+    #symbol::after {
+        height: 240px;
+        width: 0;
+        top: -112px;
+        left: 340px;
+        border-right: 1px solid #252525;
+    }
+
+    #bouton1 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #symbol {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #bouton3 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #longueur {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    /* saisie du nombre de caractère */
+    #nbrcaractere {
+        grid-column: 4;
+        grid-row: 4;
+    }
+
+    #nombre {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #bouton2 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    #similaire {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    #bouton4 {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    /* bouton générer mot de passe */
+    #generer {
+        grid-column: 3/5;
+        grid-row: 5;
+    }
+
+    /* barre de progression */
+    .barre {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    #niveau {
+        grid-column: 1/5;
+        grid-row: 2;
+
+    }
+
+}
